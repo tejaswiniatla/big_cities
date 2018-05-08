@@ -25,7 +25,7 @@ SECRET_KEY = 'fmn=fdqa$04zfww+9@bvwh)m1hj+9+765(b-&qoosqem89g^t7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'big_cities.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'big_cities',
+        'USER': 'teja',
+        'PASSWORD': 'washington504',
+        'HOST' : '',
+        'PORT' : '',
     }
 }
 
