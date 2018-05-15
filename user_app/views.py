@@ -1,7 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from . import forms
 
 def index(request):
-    return HttpResponse("Hello World")
+    return render(request,'forms/index.html')
+
+def registration_form_view(request):
+    form = forms.RegistrationForm()
+    return render(request,'forms/registration_form.html',{'form':form})
 
 # Create your views here.

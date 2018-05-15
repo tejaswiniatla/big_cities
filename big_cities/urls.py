@@ -17,8 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
 from user_app import views
+#from templates import views
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^registration_form/',views.registration_form_view,name='registration_form')
 ]
