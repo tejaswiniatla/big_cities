@@ -23,4 +23,8 @@ urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^admin/', admin.site.urls),
     url(r'^registration_form/',views.registration_form_view,name='registration_form')
+    url(r'^city_form/',views.city_form_view,name='city_form')
+    url(r'^article_form/',views.article_form_view,name='article_form')
+    url(r'^organization_form/',views.organization_form_view,name='organization_form')
+    url(r'^tag_form/',views.tag_form_view,name='tag_form')
 ]
