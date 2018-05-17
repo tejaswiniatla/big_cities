@@ -14,7 +14,7 @@ def city_form_view(request):
 
 def article_form_view(request):
     form = forms.ArticleForm()
-    return render(request,'forms/aticle_form.html',{'form':form})
+    return render(request,'forms/article_form.html',{'form':form})
 
 def organization_form_view(request):
     form = forms.OrganizationForm()
