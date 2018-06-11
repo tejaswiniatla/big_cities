@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from . import forms
+from .models import User
 
 def index(request):
     return render(request,'forms/index.html')
@@ -27,5 +28,9 @@ def tag_form_view(request):
 def home_page_view(request):
     form = forms.HomePage()
     return render(request,'forms/home_page.html',{'form':form})
+
+def user_profile_view(request,user_name):
+    name_list = user_name
+    return render(request,'forms/user_profile.html',{'User':user})
 
 # Create your views here.

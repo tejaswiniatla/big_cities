@@ -27,5 +27,6 @@ urlpatterns = [
     url(r'^article_form/',views.article_form_view,name='article_form'),
     url(r'^organization_form/',views.organization_form_view,name='organization_form'),
     url(r'^tag_form/',views.tag_form_view,name='tag_form'),
-    url(r'^home_page/',views.home_page_view,name='home_page')
+    url(r'^home_page/',views.home_page_view,name='home_page'),
+    url(r'^user_profile/',views.user_profile_view,name='user_profile')
 ]
