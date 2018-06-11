@@ -41,8 +41,4 @@ class Tagged_article(models.Model):
     article = models.ForeignKey(Article, on_delete=models.CASCADE)
     tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
 
-
-
-
-
-# Create your models here.
+    

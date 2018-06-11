@@ -1,7 +1,8 @@
 from django import forms
 
 class RegistrationForm(forms.Form):
-    name = forms.CharField()
+    Firstname = forms.CharField()
+    Lastname = forms.CharField()
     email = forms.EmailField()
     phone = forms.IntegerField()
 
@@ -27,3 +28,7 @@ class OrganizationForm(forms.Form):
 class TagForm(forms.Form):
     id = forms.IntegerField()
     keyword = forms.CharField()
+
+class HomePage(forms.Form):
+    city_name = forms.CharField()
+    org_name = forms.CharField()

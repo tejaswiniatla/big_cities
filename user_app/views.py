@@ -23,4 +23,9 @@ def organization_form_view(request):
 def tag_form_view(request):
     form = forms.TagForm()
     return render(request,'forms/tag_form.html',{'form':form})
+
+def home_page_view(request):
+    form = forms.HomePage()
+    return render(request,'forms/home_page.html',{'form':form})
+
 # Create your views here.
