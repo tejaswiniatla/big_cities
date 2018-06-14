@@ -5,7 +5,35 @@
     <title></title>
   </head>
   <body>
-    <tr>{{User}}</tr>
+  <{%extends 'base.html'%}
+
+{% block content %}
+
+ <h2 class="page-header">Users List</h2>
+
+
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+                  <th>Organization</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>{% for entry in entries %}
+                  <td>{{ entry.name }}</td>
+                  <td>{{ entry.email }}</td>
+                  <td>{{ entry.phoneNumber }}</td>
+                  <td>{{ entry.organization }}</td>
+                    {% endfor %}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+{% endblock %}
 
   </body>
 </html>

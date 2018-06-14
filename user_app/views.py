@@ -30,7 +30,7 @@ def home_page_view(request):
     return render(request,'forms/home_page.html',{'form':form})
 
 def user_profile_view(request,user_name):
-    name_list = user_name
-    return render(request,'forms/user_profile.html',{'User':user})
+    form = forms.UserProfile()
+    return render(request,'forms/user_profile.html',{'form':form})
 
 # Create your views here.
