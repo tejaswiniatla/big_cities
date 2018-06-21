@@ -29,7 +29,7 @@ def home_page_view(request):
     form = forms.HomePage()
     return render(request,'forms/home_page.html',{'form':form})
 
-def user_profile_view(request,user_name):
+def user_profile_view(request):
     form = forms.UserProfile()
     return render(request,'forms/user_profile.html',{'form':form})
 

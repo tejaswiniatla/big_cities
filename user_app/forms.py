@@ -32,3 +32,7 @@ class TagForm(forms.Form):
 class HomePage(forms.Form):
     city_name = forms.CharField()
     org_name = forms.CharField()
+
+class UserProfile(forms.Form):
+    user_name = forms.CharField()
+    
